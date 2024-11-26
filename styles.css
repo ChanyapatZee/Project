@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #42527e;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+footer {
+    background-color: #343a40;
+}
+
+footer p {
+    color: #ddd;
+}
+
+/* แก้ไขสีของ navbar */
+.navbar {
+    background-color: black; /* เปลี่ยนพื้นหลังของ navbar เป็นสีดำ */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* เปลี่ยนสีของข้อความใน navbar เป็นสีขาว */
+    font-size: 1.1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0011ff !important; /* สีของลิงก์เมื่อ hover เป็นสีทอง */
+}
+
+/* แก้ไขสีของ card header */
+.card-header {
+    background-color: #000000; /* ทำให้ header ของ card มีพื้นหลังสีเทาเข้ม */
+    color: white; /* เปลี่ยนสีข้อความเป็นสีขาว */
+}
+
+/* ทำให้เนื้อหาใน card body อ่านง่าย */
+.card-body {
+    font-size: 1rem;
+    color: #495057;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+/* เพิ่ม hover effect ให้กับ card */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* เลื่อนขึ้นเล็กน้อยเมื่อ hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้กล่องเมื่อ hover */
+}
+
+
+
+h2:hover {
+    color: #0056b3; /* เปลี่ยนสีหัวข้อเมื่อ hover */
+}
+
+footer {
+    background-color: #343a40;
+    padding: 20px;
+}
+
+footer p {
+    color: #ddd;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #007bff;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #6c757d;
+}

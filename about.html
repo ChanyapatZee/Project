@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: whitesmoke;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .members-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .members-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .member-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      text-align: center;
+    }
+
+    .member-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .member-card h3 {
+      margin: 5px 0;
+      font-size: 18px;
+    }
+
+    .member-card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .member-card a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+    }
+
+    .member-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Content -->
+  <div class="container">
+    <div class="header">
+      <h1>Members</h1>
+      <p>View profiles of all active members in our team.</p>
+    </div>
+
+    <div class="members-grid">
+      <!-- Member 1 -->
+      <div class="member-card">
+        <img src="Song.jpg" alt="Member Photo">
+        <h3>Parun Seansukbun</h3>
+        <p>Position: CEO</p>
+        <a href="https://vagexs.github.io/Resume/">GitHub Page</a>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="member-card">
+        <img src="https://via.placeholder.com/80" alt="Member Photo">
+        <h3>Narongchai</h3>
+        <p>Position: Coordinator</p>
+        <a href="https://bookmenefit.github.io/My-Resume/">GitHub Page</a>
+      </div>
+
+      <!-- Member 3 -->
+      <div class="member-card">
+        <img src="Zee.jpg" alt="Member Photo">
+        <h3>Chanyapat Somboonsinchai</h3>
+        <p>Position: Member</p>
+        <a href="https://chanyapatzee.github.io/MyResume/">GitHub Page</a>
+      </div>
+
+      <!-- Member 4 -->      
+      <div class="member-card">
+        <img src="Title.jpg" alt="Member Photo">
+        <h3>Phanuphong Suphasorn</h3>
+        <p>Position: Member</p>
+        <a href="https://mrxshion.github.io/Resume_Renew/">GitHub Page</a>
+      </div>
+
+      <!-- Member 5 -->      
+      <div class="member-card">
+        <img src="Fourwheel.jpg" alt="Member Photo">
+        <h3>Kasidit Songsin</h3>
+        <p>Position: Member</p>
+        <a href="https://fourwheel2005.github.io/My-Resume/">GitHub Page</a>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

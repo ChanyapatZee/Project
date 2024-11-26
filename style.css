@@ -1,0 +1,90 @@
+/* ปรับขนาดโลโก้ */
+.navbar-brand img {
+    width: 50px;  /* ขนาดโลโก้ */
+    height: auto;
+}
+
+/* ปรับการแสดงผลใน navbar */
+.navbar {
+    background-color: #333; /* สีพื้นหลังของ navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* ทำให้ navbar อยู่เหนือเนื้อหาอื่นๆ */
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f1f1f1 !important;
+}
+
+.navbar.scrolled {
+    background-color: #555; /* เปลี่ยนสีเมื่อเลื่อนหน้าจอ */
+}
+
+body {
+    padding-top: 70px; /* เพิ่มพื้นที่ให้กับเนื้อหาด้านล่าง navbar */
+}
+.btn-facebook {
+    background-color: #3b5998; /* สีฟ้าของ Facebook */
+    color: white;
+}
+
+.btn-instagram {
+    background-color: #E4405F; /* สีชมพูของ Instagram */
+    color: white;
+}
+
+/* เพิ่มความแตกต่างเมื่อเลื่อนเมาส์ไปบนปุ่ม */
+.btn-facebook:hover {
+    background-color: #2d4373; /* สีเข้มขึ้นเมื่อ hover */
+}
+
+.btn-instagram:hover {
+    background-color: #c13584; /* สีเข้มขึ้นเมื่อ hover */
+}
+/* Header background */
+#header {
+    background-color: #333333; /* สีพื้นหลังใหม่ที่คุณต้องการ */
+    text-align: right; /* ขยับข้อความไปทางขวา */
+}
+
+
+/* กล่องพื้นหลังสำหรับแต่ละคอลัมน์ */
+.feature-box {
+    background-color: #ffffff; /* พื้นหลังสีขาว */
+    padding: 20px;
+    margin-bottom: 20px; /* เพิ่มระยะห่างระหว่างกล่อง */
+    border-radius: 10px; /* ทำมุมกลมให้กับกล่อง */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กล่อง */
+    transition: transform 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลง */
+}
+
+/* เพิ่มเอฟเฟกต์เมื่อ hover ที่กล่อง */
+.feature-box:hover {
+    transform: translateY(-10px); /* ทำให้กล่องยกขึ้นเมื่อ hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* เงาลึกขึ้นเมื่อ hover */
+}
+
+.feature-box img {
+    margin-bottom: 15px; /* เพิ่มระยะห่างระหว่างรูปภาพและข้อความ */
+    width: 70px; /* ปรับขนาดรูป */
+    height: auto; /* คงอัตราส่วนของภาพ */
+}
+
+
+/* Social section background */
+#social {
+    background-color: #17a2b8; /* Info blue */
+    color: white;
+}
+
+/* Footer background */
+footer {
+    background-color: #343a40;
+    color: white;
+}
