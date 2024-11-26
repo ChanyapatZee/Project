@@ -5,24 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Members Page</title>
   <style>
+    /* Body styles */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: whitesmoke;
+      background-color: #121212; /* Dark Background */
+      color: #ffffff; /* White Text */
     }
 
+    /* Container styles */
     .container {
       max-width: 1200px;
       margin: 20px auto;
       padding: 10px;
     }
 
+    /* Header styles */
     .header {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+      padding: 20px;
+      background: #1f1f1f; /* Darker Header Background */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     }
 
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #f9a825; /* Highlighted Yellow */
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      color: #bbbbbb; /* Light Gray */
+    }
+
+    /* Members grid styles */
     .members-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -41,67 +61,82 @@
       }
     }
 
+    /* Member card styles */
     .member-card {
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 15px;
+      background-color: #1f1f1f; /* Dark Card Background */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
       text-align: center;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .member-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
     }
 
     .member-card img {
-      width: 80px;
-      height: 80px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       margin-bottom: 10px;
+      border: 3px solid #f9a825; /* Highlighted Yellow Border */
     }
 
     .member-card h3 {
-      margin: 5px 0;
-      font-size: 18px;
+      font-size: 1.5rem;
+      margin: 10px 0;
+      color: #f9a825; /* Highlighted Yellow */
     }
 
     .member-card p {
-      font-size: 14px;
-      color: #666;
+      font-size: 1rem;
+      color: #bbbbbb; /* Light Gray */
     }
 
     .member-card a {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 15px;
+      padding: 8px 15px;
       text-decoration: none;
-      color: #003366;
-      font-weight: bold;
+      background-color: #f9a825; /* Highlighted Yellow */
+      color: #121212; /* Dark Text */
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      font-size: 0.9rem;
     }
 
     .member-card a:hover {
-      text-decoration: underline;
+      background-color: #c68400; /* Darker Yellow */
     }
   </style>
 </head>
 <body>
   <!-- Content -->
   <div class="container">
+    <!-- Header -->
     <div class="header">
-      <h1>Members</h1>
-      <p>View profiles of all active members in our team.</p>
+      <h1>Our Team Members</h1>
+      <p>Explore profiles of our amazing team members below!</p>
     </div>
 
+    <!-- Members Grid -->
     <div class="members-grid">
       <!-- Member 1 -->
       <div class="member-card">
         <img src="Song.jpg" alt="Member Photo">
         <h3>Parun Seansukbun</h3>
         <p>Position: CEO</p>
-        <a href="https://vagexs.github.io/Resume/">GitHub Page</a>
+        <a href="https://vagexs.github.io/Resume/" target="_blank">GitHub Page</a>
       </div>
 
       <!-- Member 2 -->
       <div class="member-card">
-        <img src="https://via.placeholder.com/80" alt="Member Photo">
-        <h3>Narongchai</h3>
+        <img src="ฺBook.jpg" alt="Member Photo">
+        <h3>Narongchai dhammahora</h3>
         <p>Position: Coordinator</p>
-        <a href="https://bookmenefit.github.io/My-Resume/">GitHub Page</a>
+        <a href="https://bookmenefit.github.io/My-Resume/" target="_blank">GitHub Page</a>
       </div>
 
       <!-- Member 3 -->
@@ -109,25 +144,24 @@
         <img src="Zee.jpg" alt="Member Photo">
         <h3>Chanyapat Somboonsinchai</h3>
         <p>Position: Member</p>
-        <a href="https://chanyapatzee.github.io/MyResume/">GitHub Page</a>
+        <a href="https://chanyapatzee.github.io/MyResume/" target="_blank">GitHub Page</a>
       </div>
 
-      <!-- Member 4 -->      
+      <!-- Member 4 -->
       <div class="member-card">
         <img src="Title.jpg" alt="Member Photo">
         <h3>Phanuphong Suphasorn</h3>
         <p>Position: Member</p>
-        <a href="https://mrxshion.github.io/Resume_Renew/">GitHub Page</a>
+        <a href="https://mrxshion.github.io/Resume_Renew/" target="_blank">GitHub Page</a>
       </div>
 
-      <!-- Member 5 -->      
+      <!-- Member 5 -->
       <div class="member-card">
         <img src="Fourwheel.jpg" alt="Member Photo">
         <h3>Kasidit Songsin</h3>
         <p>Position: Member</p>
-        <a href="https://fourwheel2005.github.io/My-Resume/">GitHub Page</a>
+        <a href="https://fourwheel2005.github.io/My-Resume/" target="_blank">GitHub Page</a>
       </div>
-
     </div>
   </div>
 </body>
