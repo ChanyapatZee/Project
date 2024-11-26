@@ -2,10 +2,18 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0px;
+    padding-top: 112px; /* เพิ่มระยะห่างจาก Navbar */
     background-color: #121212; /* Dark Background */
     color: #ffffff; /* White Text */
 }
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 108px; /* สำหรับจอเล็ก เพิ่มระยะให้มากขึ้น */
+    }
+}
+
 
 /* Container styles */
 .container {
