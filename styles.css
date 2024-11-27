@@ -140,3 +140,12 @@ body {
     max-width: 100%;
     border-radius: 10px;
 }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
