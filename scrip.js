@@ -1,30 +1,16 @@
-// ฟังก์ชันการเปลี่ยนสี navbar เมื่อเลื่อนหน้าจอ
-window.onscroll = function() {changeNavbarColor()};
+// Function to show the pop-up with product details
+function showPopup(productName, price) {
+    const productInfo = `${productName}<br>ราคา: ${price}`;
+    document.getElementById("productInfo").innerHTML = productInfo;
 
-function changeNavbarColor() {
-  const navbar = document.querySelector('.navbar');
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
+    // Show Bootstrap modal
+    const productModal = new bootstrap.Modal(document.getElementById("productModal"));
+    productModal.show();
 }
 
-// Show the pop-up with product details
-function showPopup(productName, productPrice) {
-    document.getElementById('productInfo').innerText = `${productName} - ราคา: ${productPrice}`;
-    document.getElementById('overlay').style.display = 'block';
-    document.getElementById('popup').style.display = 'block';
-}
-
-// Close the pop-up
-function closePopup() {
-    document.getElementById('overlay').style.display = 'none';
-    document.getElementById('popup').style.display = 'none';
-}
-
-// Confirm purchase (you can customize the action here)
+// Function to confirm the purchase
 function confirmPurchase() {
-    alert('คุณได้ยืนยันการซื้อสินค้าแล้ว!');
-    closePopup();
+    alert("คุณยืนยันการซื้อสินค้าเรียบร้อยแล้ว!");
+    const productModal = bootstrap.Modal.getInstance(document.getElementById("productModal"));
+    productModal.hide();
 }
