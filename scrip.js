@@ -1,4 +1,4 @@
-// Function to show the pop-up with product details
+// Show product modal
 function showPopup(productName, price) {
     const productInfo = `${productName}<br>ราคา: ${price}`;
     document.getElementById("productInfo").innerHTML = productInfo;
@@ -8,7 +8,7 @@ function showPopup(productName, price) {
     productModal.show();
 }
 
-// Function to confirm the purchase
+// Confirm purchase
 function confirmPurchase() {
     alert("คุณยืนยันการซื้อสินค้าเรียบร้อยแล้ว!");
     const productModal = bootstrap.Modal.getInstance(document.getElementById("productModal"));
