@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Members Page</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="Logo.png">
 </head>
 <body>
-    <script src="script.js"></script>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -32,8 +29,9 @@
         </div>
     </nav>
 
+    <!-- Product Section -->
     <div class="container mt-5">
-        <!-- Product Items -->
+        <!-- Product 1 -->
         <div class="product-card">
             <img src="https://assets.onecompiler.app/42z9vgcq4/42z9tyzjm/king_legacy.webp" alt="Product 1">
             <h3>ไอดี King legacy 1</h3>
@@ -41,7 +39,30 @@
             <p>ราคา: <strong>500 บาท</strong></p>
             <button onclick="showPopup('ไอดี King legacy 1', '500 บาท')">ซื้อสินค้า</button>
         </div>
-        <!-- เพิ่มสินค้าอื่นได้ที่นี่ -->
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="https://assets.onecompiler.app/42z9vgcq4/42z9tyzjm/Robloxx.webp" alt="Product 2">
+            <h3>ไก่ตันKL 2</h3>
+            <p>รายละเอียด: เวลตันพร้อมลงดันเจี้ยน</p>
+            <p>ราคา: <strong>290 บาท</strong></p>
+            <button onclick="showPopup('ไก่ตันKL 2', '290 บาท')">ซื้อสินค้า</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="https://assets.onecompiler.app/42z9vgcq4/42z9tyzjm/Markfishingrodmax.webp" alt="Product 3">
+            <h3>Markfishingrodmax 3</h3>
+            <p>รายละเอียด: ของแน่นตัวอึดมากพร้อมตีบอสใหญ่ฟาร์มตัง</p>
+            <p>ราคา: <strong>1000 บาท</strong></p>
+            <button onclick="showPopup('Markfishingrodmax 3', '1000 บาท')">ซื้อสินค้า</button>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="https://shorturl.asia/Mmzvn" alt="Product 4">
+            <h3>Hero Tycoon 4</h3>
+            <p>รายละเอียด: </p>
+            <p>ราคา: <strong>2400 บาท</strong></p>
+            <button onclick="showPopup('Hero Tycoon 4', '2400 บาท')">ซื้อสินค้า</button>
+        </div>
     </div>
 
     <!-- Pop-up -->
@@ -53,6 +74,7 @@
         <button class="btn btn-secondary" onclick="closePopup()">ยกเลิก</button>
     </div>
 
+    <!-- JavaScript -->
     <script src="scripts.js"></script>
 </body>
 </html>
