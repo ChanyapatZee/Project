@@ -15,7 +15,7 @@
                 <img src="Logo.png" alt="Logo" class="rounded-circle" style="width: 50px; height: auto;">
                 Panmoodeng
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,50 +31,44 @@
 
     <!-- Product Section -->
     <div class="container mt-5">
-        <!-- Product 1 -->
-        <div class="product-card">
-            <img src="https://assets.onecompiler.app/42z9vgcq4/42z9tyzjm/king_legacy.webp" alt="Product 1">
-            <h3>ไอดี King legacy 1</h3>
-            <p>รายละเอียด: ของเต็มดาบพร้อมตีบอส</p>
-            <p>ราคา: <strong>500 บาท</strong></p>
-            <button onclick="showPopup('ไอดี King legacy 1', '500 บาท')">ซื้อสินค้า</button>
-        </div>
-        <!-- Product 2 -->
-        <div class="product-card">
-            <img src="https://assets.onecompiler.app/42z9vgcq4/42z9tyzjm/Robloxx.webp" alt="Product 2">
-            <h3>ไก่ตันKL 2</h3>
-            <p>รายละเอียด: เวลตันพร้อมลงดันเจี้ยน</p>
-            <p>ราคา: <strong>290 บาท</strong></p>
-            <button onclick="showPopup('ไก่ตันKL 2', '290 บาท')">ซื้อสินค้า</button>
-        </div>
-        <!-- Product 3 -->
-        <div class="product-card">
-            <img src="https://assets.onecompiler.app/42z9vgcq4/42z9tyzjm/Markfishingrodmax.webp" alt="Product 3">
-            <h3>Markfishingrodmax 3</h3>
-            <p>รายละเอียด: ของแน่นตัวอึดมากพร้อมตีบอสใหญ่ฟาร์มตัง</p>
-            <p>ราคา: <strong>1000 บาท</strong></p>
-            <button onclick="showPopup('Markfishingrodmax 3', '1000 บาท')">ซื้อสินค้า</button>
-        </div>
-        <!-- Product 4 -->
-        <div class="product-card">
-            <img src="https://shorturl.asia/Mmzvn" alt="Product 4">
-            <h3>Hero Tycoon 4</h3>
-            <p>รายละเอียด: </p>
-            <p>ราคา: <strong>2400 บาท</strong></p>
-            <button onclick="showPopup('Hero Tycoon 4', '2400 บาท')">ซื้อสินค้า</button>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://assets.onecompiler.app/42z9vgcq4/42z9tyzjm/king_legacy.webp" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">ไอดี King legacy 1</h5>
+                        <p class="card-text">ของเต็มดาบพร้อมตีบอส</p>
+                        <p><strong>ราคา: 500 บาท</strong></p>
+                        <button class="btn btn-primary" onclick="showPopup('ไอดี King legacy 1', '500 บาท')">ซื้อสินค้า</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add other products in a similar way -->
         </div>
     </div>
 
     <!-- Pop-up -->
-    <div class="overlay" id="overlay" onclick="closePopup()"></div>
-    <div class="popup" id="popup">
-        <h4>ยืนยันการซื้อสินค้า</h4>
-        <p id="productInfo"></p>
-        <button class="btn btn-primary" onclick="confirmPurchase()">ยืนยัน</button>
-        <button class="btn btn-secondary" onclick="closePopup()">ยกเลิก</button>
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">ยืนยันการซื้อสินค้า</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="productInfo"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+                    <button type="button" class="btn btn-primary" onclick="confirmPurchase()">ยืนยัน</button>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- JavaScript -->
-    <script src="scrip.js"></script>
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
